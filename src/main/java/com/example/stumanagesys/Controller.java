@@ -11,7 +11,7 @@ public class Controller {
     static void saveStuData(java.util.List source) throws IOException {
         String jsonText = JSONArray.toJSONString(source);
 
-        File jsonFile = new File("D:\\javaProject\\StuManageSys\\src\\main\\resources\\com\\example\\stumanagesys\\students.json");
+        File jsonFile = new File("src\\main\\resources\\com\\example\\stumanagesys\\students.json");
         FileOutputStream output = new FileOutputStream(jsonFile);
         OutputStreamWriter writer=new OutputStreamWriter(output, StandardCharsets.UTF_8);
         writer.write(jsonText);
@@ -19,7 +19,7 @@ public class Controller {
     }
 
     static void saveStuDataFromJsonText(String jsonText) throws IOException {
-        File jsonFile = new File("D:\\javaProject\\StuManageSys\\src\\main\\resources\\com\\example\\stumanagesys\\students.json");
+        File jsonFile = new File("src\\main\\resources\\com\\example\\stumanagesys\\students.json");
         FileOutputStream output = new FileOutputStream(jsonFile);
         OutputStreamWriter writer=new OutputStreamWriter(output, StandardCharsets.UTF_8);
         writer.write(jsonText);
@@ -29,7 +29,7 @@ public class Controller {
     static void saveAdministratorData(java.util.List source) throws IOException {
         String jsonText = JSONArray.toJSONString(source);
 
-        File jsonFile = new File("D:\\javaProject\\StuManageSys\\src\\main\\resources\\com\\example\\stumanagesys\\administrators.json");
+        File jsonFile = new File("src\\main\\resources\\com\\example\\stumanagesys\\administrators.json");
         FileOutputStream output = new FileOutputStream(jsonFile);
         OutputStreamWriter writer=new OutputStreamWriter(output, StandardCharsets.UTF_8);
         writer.write(jsonText);
@@ -37,7 +37,7 @@ public class Controller {
     }
 
     static java.util.List readStuData() throws IOException {
-        InputStream input = new FileInputStream("D:\\javaProject\\StuManageSys\\src\\main\\resources\\com\\example\\stumanagesys\\students.json");
+        InputStream input = new FileInputStream("src\\main\\resources\\com\\example\\stumanagesys\\students.json");
 
         InputStreamReader reader = new InputStreamReader(input, StandardCharsets.UTF_8);
 
@@ -53,7 +53,7 @@ public class Controller {
     }
 
     static java.util.List readAdministratorData() throws IOException {
-        InputStream input = new FileInputStream("D:\\javaProject\\StuManageSys\\src\\main\\resources\\com\\example\\stumanagesys\\administrators.json");
+        InputStream input = new FileInputStream("src\\main\\resources\\com\\example\\stumanagesys\\administrators.json");
 
         InputStreamReader reader = new InputStreamReader(input, StandardCharsets.UTF_8);
 
@@ -69,7 +69,7 @@ public class Controller {
     }
 
     static String getStuFileString() throws IOException {
-        InputStream input = new FileInputStream("D:\\javaProject\\StuManageSys\\src\\main\\resources\\com\\example\\stumanagesys\\students.json");
+        InputStream input = new FileInputStream("src\\main\\resources\\com\\example\\stumanagesys\\students.json");
 
         InputStreamReader reader = new InputStreamReader(input, StandardCharsets.UTF_8);
 
